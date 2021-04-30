@@ -3,7 +3,6 @@ const objectId = require('mongoose').Types.ObjectId
 
 exports.create = (data) =>
 new Promise((resolve, reject) => {
-    // kegiatanModel.create, Fungsi untuk menyimpan karyawan
     karyawanModel.create(data)
     .then(() => resolve({
         status: true,
